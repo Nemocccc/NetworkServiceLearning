@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package Test;
+
+service Test{
+    rpc SayHello(Hello) returns (Hello);
+
+    rpc GetPackage(PackageIndex) returns (PackageInfo);
+
+    rpc GetClientInfo(Hello) returns (ClientInfo);
+}
+
+message Hello{
+    string name = 1;
+}
+
+message PackageIndex {
+    int32 Index = 1;
+}
+
+message PackageInfo{
+    int32 uid = 1;
+    repeated int32 IntArr = 2;
+    string discription = 3;
+    bool status = 4;
+}
+
+message ClientInfo {
+    string Info = 1;
+}
