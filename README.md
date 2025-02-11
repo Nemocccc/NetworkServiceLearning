@@ -120,3 +120,23 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
    // 新开一个终端启动客户端
    python client.py
    ```
+
+
+### tcp
+
+1. server.py
+  ```python
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # 用SOCK_STREAM创建套接字
+    server_address = (host, port)                                       # 
+    server_socket.bind(self.server_address)                             # 绑定服务地址
+    server_socket.listen()                                              # 监听
+
+    while True:
+      client_socket, client_address = self.server_socket.accept()              # 接受连接
+      data = client_socket.recv(4096)
+      response = ""
+      client_socket.sendall(response.encode('UTF-8'))
+      # client_socket.close() 如果执行这个，client在recv方法之后的sendall因为被终止无法执行。
+      if not data:
+        server_socket.close()
+  ```

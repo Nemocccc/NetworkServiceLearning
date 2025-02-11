@@ -3,6 +3,7 @@ import test_pb2
 
 import grpc
 from concurrent import futures
+]
 
 class TestServicer(test_pb2_grpc.TestServicer):
     def SayHello(self, request, context):
@@ -27,6 +28,7 @@ def serve():
     )
     server.add_insecure_port('[::]:50051')
     server.start()
+    print("Server started")
     server.wait_for_termination()
 
 if __name__ == '__main__':
