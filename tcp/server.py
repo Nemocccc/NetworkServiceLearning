@@ -39,7 +39,10 @@ class tcpServer():
 
     def Start(self):
         self.stop = False
-        threading.Thread(target=self.run).start()
+        self.threads = []
+        thread = threading.Thread(target=self.run)
+        self.threads.append(thread)
+        thread.start()
 
     def run(self):
         print(f"TCP Server is running on {self.server_address}")
@@ -65,8 +68,10 @@ class tcpServer():
                 break
 
     def Stop(self):
-        self.stop = True
+        for thread in self.threads:
+            thread.join()
         self.server_socket.close()
+        self.thread.join()
 
 
 if __name__ == '__main__':
