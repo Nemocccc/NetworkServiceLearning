@@ -1,32 +1,6 @@
 import socket
 import threading
-import time
 
-
-
-# def tcp_server():
-#     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-
-#     server_address = ('localhost', 12345)
-#     server_socket.bind(server_address)
-
-    # server_socket.listen()
-    # print(f"TCP Server is running on {server_address}")
-
-    # try:
-    #     while True:
-    #         client_socket, client_address = server_socket.accept()
-    #         print(f"Connection from {client_address}")
-
-    #         data = client_socket.recv(4096)
-    #         print(f"Received data: \n {data}")
-
-    #         response = "Hello from server"
-    #         client_socket.sendall(response.encode('UTF-8'))
-
-    #         client_socket.close()
-    # finally:
-    #     server_socket.close()
 
 
 class tcpServer():
@@ -34,25 +8,34 @@ class tcpServer():
         self.server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server_address = (host, port)
         self.server_socket.bind(self.server_address)
-        self.server_socket.listen()
-        self.stop = True
-
-    def Start(self):
+        self.server_socket.settimeout(10)
+        self.server_socket.listen(5)
         self.stop = False
         self.threads = []
-        thread = threading.Thread(target=self.run)
-        self.threads.append(thread)
-        thread.start()
 
-    def run(self):
+    def Start(self):
         print(f"TCP Server is running on {self.server_address}")
         print("================================================")
-        client_socket, client_address = self.server_socket.accept()
-        print(f"\nConnection from {client_address[0]}:{client_address[1]}\n")
 
         while not self.stop:
+            try: 
+                client_socket, client_address = self.server_socket.accept()
+                print(f"\nConnection from {client_address[0]}:{client_address[1]}\n")
+                thread = threading.Thread(target=self.run, args=(client_socket, client_address))
+                self.threads.append(thread)
+                thread.start()
+            except socket.timeout:
+                self.Stop()
+                # break
 
+    def run(self, client_socket, client_address):
+        while True:
             data = client_socket.recv(4096)    #recv方法会一直阻塞进程，直到client发送的数据溢出4096或者client关闭连接（数据传输通道？），导致沾包。
+
+            if not data:
+                print("Connection close")
+                break
+
             print(f"Received data without decode: \n {data}")
             # print(f"Received data decode to ASCII: \n {data.decode('ASCII')}") # UTF-8是ascii超集，无法解码
             print(f"Received data decode to UTF-8: \n {data.decode('UTF-8')}")
@@ -61,22 +44,16 @@ class tcpServer():
             response = "Hello from server"
             client_socket.sendall(response.encode('UTF-8'))
 
-            if not data:
-                print("Connection close")
-                self.stop = True
-                self.server_socket.close()
-                break
-
     def Stop(self):
+        print("Stop function is called, server closing")
         for thread in self.threads:
             thread.join()
+        self.stop = True
         self.server_socket.close()
-        self.thread.join()
 
 
 if __name__ == '__main__':
     server = tcpServer()
     server.Start()
-    time.sleep(10)
-    server.Stop()
+    # server.Stop()
     print("Server is closed")

@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package snack;
+
+service SnakeGame {
+    rpc TextConnect (Hello) returns (Hello);
+
+    rpc GetAllData (Hello) returns (GameData);
+}
+
+message Hello {
+    string msg = 1;
+}
+
+// 输出
+message GameData {
+  bool game_over = 1; // 游戏是否结束
+  Snake snake = 2;    // 蛇的信息
+  repeated Food foods = 3; // 食物列表
+  Map map = 4;       // 地图信息
+  int32 score = 5;   // 分数
+}
+
+message Snake {
+  repeated Position body = 1; // 蛇的身体，由多个位置组成
+}
+
+message Food {
+  Position position = 1; // 食物的位置
+}
+
+message Map {
+  int32 width = 1; // 地图宽度
+  int32 height = 2; // 地图高度
+  repeated Position walls = 3; // 地图的墙壁位置
+}
+
+message Position {
+  int32 x = 1; // 横坐标
+  int32 y = 2; // 纵坐标
+}
+
+// 输入
+message operation {
+  string direction = 1; // 方向
+}
