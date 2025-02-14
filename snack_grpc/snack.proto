@@ -3,9 +3,9 @@ syntax = "proto3";
 package snack;
 
 service SnakeGame {
-    rpc TextConnect (Hello) returns (Hello);
+    rpc TestConnect (Hello) returns (Hello);
 
-    rpc GetAllData (Hello) returns (GameData);
+    rpc Interation (Operation) returns (GameData);
 }
 
 message Hello {
@@ -41,6 +41,6 @@ message Position {
 }
 
 // 输入
-message operation {
+message Operation {
   string direction = 1; // 方向
 }

@@ -3,7 +3,7 @@
 #### python端
 [gRPC框架官方教程-python](https://grpc.org.cn/docs/languages/python/basics/)
 
-![alt text](static/image.png)
+![alt text](static/image.svg)
 
 -  四种服务(流式与一元)：
 ```proto
@@ -126,7 +126,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 
 [grpc教程-cpp](https://grpc.org.cn/docs/languages/cpp/quickstart/)
 
-1. 安装必要工具，以linux为例（wsl)
+1. 安装必要工具，linux（wsl)
   ```bash
    export MY_INSTALL_DIR=$HOME/.{dirName}
    mkdir -p $MY_INSTALL_DIR
@@ -136,7 +136,8 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
    sh cmake-linux.sh -- --skip-license --prefix=$MY_INSTALL_DIR
    rm cmake-linux.sh
    echo "安装grpc基本工具"
-   sudo apt install -y build-essential autoconf libtool pkg-config
+   sudo apt-get update && sudo apt-get upgrade
+   sudo apt-get install -y build-essential autoconf libtool pkg-config
    echo "grpc本身"
    git clone --recurse-submodules -b v1.66.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
    echo "安装grpc和proto buffers"
@@ -152,6 +153,58 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
    make install
    popd
   ```
+
+  <br>
+
+  ##### ***进行windows的grpc安装之前，先到下方的网站安装vs installer， 然后在下载器内选择<桌面C++开发工具>进行下载，此处不多赘叙***
+  [ms c++ 生成工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/?spm=5176.28103460.0.0.733a5d27EKCizQ)
+
+  <br>
+
+  Windows cmd：
+  ```bash
+    set MY_INSTALL_DIR=%USERPROFILE%\cmake
+    mkdir %INSTALL_DIR%
+    set PATH=%PATH%;$MY_INSTALL_DIR\bin
+
+    choco install cmake
+
+    cmake --version
+
+    git clone --recurse-submodules -b v1.66.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
+
+    cd grpc
+    mkdir "cmake\build"
+    pushd "cmake\build"
+    cmake -DgRPC_INSTALL=ON -DgRPC_BUILD_TESTS=OFF -DCMAKE_CXX_STANDARD=17 -DCMAKE_INSTALL_PREFIX=%MY_INSTALL_DIR% ..\..
+    cmake --build . --config Release --target install -j 4
+    popd
+  ```
+
+  Windows powershell:
+  ```bash
+     $env:MY_INSTALL_DIR = "$env:USERPROFILE\cmake"
+     New-Item -ItemType Directory -Force -Path $env:MY_INSTALL_DIR
+     [Environment]::SetEnvironmentVariable("MY_INSTALL_DIR", "$env:USERPROFILE\cmake", "User")
+     [Environment]::SetEnvironmentVariable("PATH", $env:PATH + ";$env:MY_INSTALL_DIR\bin", "User")
+
+     "cmake 安装可能需要vpn"
+     winget install cmake
+
+     cmake --version
+
+     git clone --recurse-submodules -b v1.66.0 --depth 1 --shallow-submodules https://github.com/grpc/grpc
+
+     cd grpc
+     mkdir "cmake\build"
+     pushd "cmake\build"
+     cmake -DgRPC_INSTALL=ON -DgRPC_BUILD_TESTS=OFF -DCMAKE_CXX_STANDARD=17 -DCMAKE_INSTALL_PREFIX=%MY_INSTALL_DIR% ..\..
+     cmake --build . --config Release --target install -j 4
+     popd
+  ```
+
+  如果一切顺利，grpc就安装成功了
+
 2. proto文件的编写是跨语言的，与python同
 
 3. server端同步接口编写

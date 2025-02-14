@@ -34,14 +34,14 @@ class SnakeGameStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.TextConnect = channel.unary_unary(
-                '/snack.SnakeGame/TextConnect',
+        self.TestConnect = channel.unary_unary(
+                '/snack.SnakeGame/TestConnect',
                 request_serializer=snack__pb2.Hello.SerializeToString,
                 response_deserializer=snack__pb2.Hello.FromString,
                 _registered_method=True)
-        self.GetAllData = channel.unary_unary(
-                '/snack.SnakeGame/GetAllData',
-                request_serializer=snack__pb2.Hello.SerializeToString,
+        self.Interation = channel.unary_unary(
+                '/snack.SnakeGame/Interation',
+                request_serializer=snack__pb2.Operation.SerializeToString,
                 response_deserializer=snack__pb2.GameData.FromString,
                 _registered_method=True)
 
@@ -49,13 +49,13 @@ class SnakeGameStub(object):
 class SnakeGameServicer(object):
     """Missing associated documentation comment in .proto file."""
 
-    def TextConnect(self, request, context):
+    def TestConnect(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
         raise NotImplementedError('Method not implemented!')
 
-    def GetAllData(self, request, context):
+    def Interation(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -64,14 +64,14 @@ class SnakeGameServicer(object):
 
 def add_SnakeGameServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'TextConnect': grpc.unary_unary_rpc_method_handler(
-                    servicer.TextConnect,
+            'TestConnect': grpc.unary_unary_rpc_method_handler(
+                    servicer.TestConnect,
                     request_deserializer=snack__pb2.Hello.FromString,
                     response_serializer=snack__pb2.Hello.SerializeToString,
             ),
-            'GetAllData': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetAllData,
-                    request_deserializer=snack__pb2.Hello.FromString,
+            'Interation': grpc.unary_unary_rpc_method_handler(
+                    servicer.Interation,
+                    request_deserializer=snack__pb2.Operation.FromString,
                     response_serializer=snack__pb2.GameData.SerializeToString,
             ),
     }
@@ -86,7 +86,7 @@ class SnakeGame(object):
     """Missing associated documentation comment in .proto file."""
 
     @staticmethod
-    def TextConnect(request,
+    def TestConnect(request,
             target,
             options=(),
             channel_credentials=None,
@@ -99,7 +99,7 @@ class SnakeGame(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/snack.SnakeGame/TextConnect',
+            '/snack.SnakeGame/TestConnect',
             snack__pb2.Hello.SerializeToString,
             snack__pb2.Hello.FromString,
             options,
@@ -113,7 +113,7 @@ class SnakeGame(object):
             _registered_method=True)
 
     @staticmethod
-    def GetAllData(request,
+    def Interation(request,
             target,
             options=(),
             channel_credentials=None,
@@ -126,8 +126,8 @@ class SnakeGame(object):
         return grpc.experimental.unary_unary(
             request,
             target,
-            '/snack.SnakeGame/GetAllData',
-            snack__pb2.Hello.SerializeToString,
+            '/snack.SnakeGame/Interation',
+            snack__pb2.Operation.SerializeToString,
             snack__pb2.GameData.FromString,
             options,
             channel_credentials,

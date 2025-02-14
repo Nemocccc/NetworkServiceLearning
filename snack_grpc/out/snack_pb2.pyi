@@ -55,7 +55,7 @@ class Position(_message.Message):
     y: int
     def __init__(self, x: _Optional[int] = ..., y: _Optional[int] = ...) -> None: ...
 
-class operation(_message.Message):
+class Operation(_message.Message):
     __slots__ = ("direction",)
     DIRECTION_FIELD_NUMBER: _ClassVar[int]
     direction: str
