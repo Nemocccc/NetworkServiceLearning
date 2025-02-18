@@ -1,8 +1,8 @@
 // server
 
 
-#ifndef SNAKETCP_H
-#define SNAKETCP_H
+#ifndef SNAKEUDP_H
+#define SNAKEUDP_H
 
 #include <iostream>
 #include <vector>
@@ -17,11 +17,10 @@
 #define PORT 12345
 #define BUFFER_SIZE 1024
 
-class SnakeTcp {
+class SnakeUdp {
     protected:
         SOCKET ServerSocket;
         sockaddr_in ServerAddr;
-        sockaddr_in ClientAddr;
         std::vector<SOCKET> Threads;
         CRITICAL_SECTION cs;         // 线程锁
         WSADATA wsaData;
@@ -29,14 +28,15 @@ class SnakeTcp {
         int ClientSize;
 
     public:
+        sockaddr_in ClientAddr;
         SOCKET ClientSocket;
         
-        SnakeTcp() = default;
-        ~SnakeTcp() = default;
+        SnakeUdp() = default;
+        ~SnakeUdp() = default;
 
         bool StartServer();
         std::string ReceiveData();
-        void SendResponse(char response[]);
+        void SendResponse(const char response[]);
         void CloseServer();
 };
 
