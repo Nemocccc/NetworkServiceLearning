@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_stacktrace.a CMakeFiles/stacktrace.dir/stacktrace.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_stacktrace.a

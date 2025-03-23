@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_statusor.a CMakeFiles/statusor.dir/statusor.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_statusor.a

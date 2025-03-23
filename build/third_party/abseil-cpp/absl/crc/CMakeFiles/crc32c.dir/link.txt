@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_crc32c.a CMakeFiles/crc32c.dir/crc32c.cc.obj CMakeFiles/crc32c.dir/internal/crc_memcpy_fallback.cc.obj CMakeFiles/crc32c.dir/internal/crc_memcpy_x86_arm_combined.cc.obj CMakeFiles/crc32c.dir/internal/crc_non_temporal_memcpy.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_crc32c.a

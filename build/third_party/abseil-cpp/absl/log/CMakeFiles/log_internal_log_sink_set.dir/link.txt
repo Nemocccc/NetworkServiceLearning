@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_log_internal_log_sink_set.a CMakeFiles/log_internal_log_sink_set.dir/internal/log_sink_set.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_log_internal_log_sink_set.a

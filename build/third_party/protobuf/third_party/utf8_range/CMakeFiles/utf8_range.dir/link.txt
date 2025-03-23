@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libutf8_range.a CMakeFiles/utf8_range.dir/utf8_range.c.obj
+D:/mingw64/bin/ranlib.exe libutf8_range.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libupb_wire_lib.a CMakeFiles/upb_wire_lib.dir/third_party/upb/upb/wire/decode.c.obj CMakeFiles/upb_wire_lib.dir/third_party/upb/upb/wire/encode.c.obj CMakeFiles/upb_wire_lib.dir/third_party/upb/upb/wire/internal/decode_fast.c.obj
+D:/mingw64/bin/ranlib.exe libupb_wire_lib.a

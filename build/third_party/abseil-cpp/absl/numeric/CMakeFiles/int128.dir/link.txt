@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_int128.a CMakeFiles/int128.dir/int128.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_int128.a

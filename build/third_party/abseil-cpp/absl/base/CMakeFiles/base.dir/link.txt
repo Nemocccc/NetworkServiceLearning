@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_base.a CMakeFiles/base.dir/internal/cycleclock.cc.obj CMakeFiles/base.dir/internal/spinlock.cc.obj CMakeFiles/base.dir/internal/sysinfo.cc.obj CMakeFiles/base.dir/internal/thread_identity.cc.obj CMakeFiles/base.dir/internal/unscaledcycleclock.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_base.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libgrpc++_alts.a CMakeFiles/grpc++_alts.dir/src/cpp/common/alts_context.cc.obj CMakeFiles/grpc++_alts.dir/src/cpp/common/alts_util.cc.obj
+D:/mingw64/bin/ranlib.exe libgrpc++_alts.a

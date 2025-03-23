@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_strerror.a CMakeFiles/strerror.dir/internal/strerror.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_strerror.a

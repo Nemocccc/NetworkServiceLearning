@@ -1,0 +1,48 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"third_party/cares/cares/include/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 7,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Devel",
+			"destination" : "include",
+			"paths" : 
+			[
+				"third_party/cares/cares/include/ares.h",
+				"third_party/cares/cares/include/ares_version.h",
+				"D:/hw2/build/third_party/cares/cares/ares_build.h",
+				"third_party/cares/cares/include/ares_rules.h",
+				"third_party/cares/cares/include/ares_dns.h",
+				"third_party/cares/cares/include/ares_nameser.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/cares/cares/include",
+		"source" : "third_party/cares/cares/include"
+	}
+}

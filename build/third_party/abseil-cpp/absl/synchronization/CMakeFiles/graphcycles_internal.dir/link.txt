@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_graphcycles_internal.a CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_graphcycles_internal.a

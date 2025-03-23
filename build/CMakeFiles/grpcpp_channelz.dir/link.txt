@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libgrpcpp_channelz.a CMakeFiles/grpcpp_channelz.dir/gens/src/proto/grpc/channelz/channelz.pb.cc.obj CMakeFiles/grpcpp_channelz.dir/gens/src/proto/grpc/channelz/channelz.grpc.pb.cc.obj CMakeFiles/grpcpp_channelz.dir/src/cpp/server/channelz/channelz_service.cc.obj CMakeFiles/grpcpp_channelz.dir/src/cpp/server/channelz/channelz_service_plugin.cc.obj
+D:/mingw64/bin/ranlib.exe libgrpcpp_channelz.a

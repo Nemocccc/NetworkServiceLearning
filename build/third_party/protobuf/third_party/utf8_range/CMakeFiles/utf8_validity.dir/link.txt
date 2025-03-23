@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libutf8_validity.a CMakeFiles/utf8_validity.dir/utf8_validity.cc.obj CMakeFiles/utf8_validity.dir/utf8_range.c.obj
+D:/mingw64/bin/ranlib.exe libutf8_validity.a

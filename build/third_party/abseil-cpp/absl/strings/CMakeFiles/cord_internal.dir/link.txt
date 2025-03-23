@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_cord_internal.a CMakeFiles/cord_internal.dir/internal/cord_internal.cc.obj CMakeFiles/cord_internal.dir/internal/cord_rep_btree.cc.obj CMakeFiles/cord_internal.dir/internal/cord_rep_btree_navigator.cc.obj CMakeFiles/cord_internal.dir/internal/cord_rep_btree_reader.cc.obj CMakeFiles/cord_internal.dir/internal/cord_rep_crc.cc.obj CMakeFiles/cord_internal.dir/internal/cord_rep_consume.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_cord_internal.a

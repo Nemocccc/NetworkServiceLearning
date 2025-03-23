@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_log_internal_globals.a CMakeFiles/log_internal_globals.dir/internal/globals.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_log_internal_globals.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_flags_reflection.a CMakeFiles/flags_reflection.dir/reflection.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_flags_reflection.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_cordz_sample_token.a CMakeFiles/cordz_sample_token.dir/internal/cordz_sample_token.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_cordz_sample_token.a

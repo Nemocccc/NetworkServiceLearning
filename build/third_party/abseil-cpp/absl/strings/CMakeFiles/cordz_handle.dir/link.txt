@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_cordz_handle.a CMakeFiles/cordz_handle.dir/internal/cordz_handle.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_cordz_handle.a

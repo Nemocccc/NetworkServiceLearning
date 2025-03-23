@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_random_distributions.a CMakeFiles/random_distributions.dir/discrete_distribution.cc.obj CMakeFiles/random_distributions.dir/gaussian_distribution.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_random_distributions.a

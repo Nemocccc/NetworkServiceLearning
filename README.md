@@ -1,5 +1,26 @@
 ### gRPC
 
+### table
+- [gRPC](#grpc)
+- [table](#table)
+  - [python端](#python端)
+    - [安装grpc](#安装grpc)
+    - [简单服务定义](#简单服务定义)
+    - [利用proto根据.proto文件自动生成python文件](#利用proto根据proto文件自动生成python文件)
+    - [利用生成的{}\_pb2\_grpc.py和{}\_pb2.py编写服务端和客户端代码](#利用生成的_pb2_grpcpy和_pb2py编写服务端和客户端代码)
+    - [启动服务：](#启动服务)
+  - [cpp端](#cpp端)
+    - [安装必要工具](#安装必要工具)
+    - [proto文件的编写是跨语言的，与python同](#proto文件的编写是跨语言的与python同)
+    - [server端同步接口编写](#server端同步接口编写)
+- [tcp](#tcp)
+  - [server.py](#serverpy)
+  - [client.py](#clientpy)
+- [udp](#udp)
+  - [server.py](#serverpy-1)
+  - [client.py](#clientpy-1)
+
+
 #### python端
 [gRPC框架官方教程-python](https://grpc.org.cn/docs/languages/python/basics/)
 
@@ -14,15 +35,15 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 // rpc client(client-data-structure) returns (server-data-structure) {}
 ```
 
-1. **安装grpc**
+##### 安装grpc
   ```powershell
   pip install grpcio
   pip install grpcio-tools
   ```
 
-2. **简单服务定义**
+##### 简单服务定义
    *vscode推荐下载vscode-proto3插件*
-   ```proto
+  ```proto
    syntax 'proto3'; // 指定proto buffers版本为proto3
 
    package Service // package用于创建命名空间，相当于c++的namespace
@@ -43,9 +64,9 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
    }
 
     ...
-    ```
+  ```
 
-3. 利用proto根据.proto文件自动生成python文件
+##### 利用proto根据.proto文件自动生成python文件
    ```powershell
    python -m gprc_tools.protoc \
     -I{dir-where-protofiles-in} \
@@ -60,7 +81,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
    ```
   
 
-4. 利用生成的{}_pb2_grpc.py和{}_pb2.py编写服务端和客户端代码
+##### 利用生成的{}_pb2_grpc.py和{}_pb2.py编写服务端和客户端代码
   - 客户端(server.py)：
     ```python
     import grpc
@@ -115,7 +136,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
       run()
     ```
 
-5. 启动服务：
+##### 启动服务：
    ```bash
    python server.py
    // 新开一个终端启动客户端
@@ -126,7 +147,8 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 
 [grpc教程-cpp](https://grpc.org.cn/docs/languages/cpp/quickstart/)
 
-1. 安装必要工具，linux（wsl)
+##### 安装必要工具
+- linux（wsl)
   ```bash
    export MY_INSTALL_DIR=$HOME/.{dirName}
    mkdir -p $MY_INSTALL_DIR
@@ -156,12 +178,12 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 
   <br>
 
-  ##### ***进行windows的grpc安装之前，先到下方的网站安装vs installer， 然后在下载器内选择<桌面C++开发工具>进行下载，此处不多赘叙***
-  [ms c++ 生成工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/?spm=5176.28103460.0.0.733a5d27EKCizQ)
+  > ***进行windows的grpc安装之前，先到下方的网站安装vs installer， 然后在下载器内选择<桌面C++开发工具>进行下载，此处不多赘叙***
+  > [ms c++ 生成工具](https://visualstudio.microsoft.com/zh-hans/visual-cpp-build-tools/?spm=5176.28103460.0.0.733a5d27EKCizQ)
 
   <br>
 
-  Windows cmd：
+- Windows cmd：
   ```bash
     set MY_INSTALL_DIR=%USERPROFILE%\cmake
     mkdir %INSTALL_DIR%
@@ -180,8 +202,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
     cmake --build . --config Release --target install -j 4
     popd
   ```
-
-  Windows powershell:
+- Windows powershell:
   ```bash
      $env:MY_INSTALL_DIR = "$env:USERPROFILE\cmake"
      New-Item -ItemType Directory -Force -Path $env:MY_INSTALL_DIR
@@ -205,9 +226,9 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 
   如果一切顺利，grpc就安装成功了
 
-2. proto文件的编写是跨语言的，与python同
+##### proto文件的编写是跨语言的，与python同
 
-3. server端同步接口编写
+##### server端同步接口编写
   ```cpp
   #include <grpc/grpc.h>
   #include <grpcpp/security/server_credentials.h>
@@ -249,7 +270,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 
 ### tcp
 
-1. server.py
+#### server.py
   ```python
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)   # 用SOCK_STREAM创建套接字
     server_address = (host, port)                                       # 
@@ -266,7 +287,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
         server_socket.close()
   ```
 
-2. client.py
+#### client.py
   ```python
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_address = ('localhost', 12345)
@@ -278,7 +299,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
   ```
 
 ### udp
-1. server.py
+#### server.py
   ```python
   server_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)   # 用SOCK_DGRAM创建套接字
   server_address = ('localhost', 12345)
@@ -289,7 +310,7 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
   server_socket.close()
   ```
 
-2. client.py
+#### client.py
   ```python
   client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
   server_address = ('localhost', 12345)

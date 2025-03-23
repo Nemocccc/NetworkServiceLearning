@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libupb_mem_lib.a CMakeFiles/upb_mem_lib.dir/third_party/upb/upb/mem/alloc.c.obj CMakeFiles/upb_mem_lib.dir/third_party/upb/upb/mem/arena.c.obj
+D:/mingw64/bin/ranlib.exe libupb_mem_lib.a

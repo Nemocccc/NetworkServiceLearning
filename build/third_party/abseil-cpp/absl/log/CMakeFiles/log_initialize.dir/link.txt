@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_log_initialize.a CMakeFiles/log_initialize.dir/initialize.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_log_initialize.a

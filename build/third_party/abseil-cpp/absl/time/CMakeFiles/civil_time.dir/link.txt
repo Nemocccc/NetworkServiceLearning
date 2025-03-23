@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_civil_time.a CMakeFiles/civil_time.dir/internal/cctz/src/civil_time_detail.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_civil_time.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_examine_stack.a CMakeFiles/examine_stack.dir/internal/examine_stack.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_examine_stack.a

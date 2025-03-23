@@ -1,0 +1,62 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"third_party/cares/cares/src/lib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 103,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Devel",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"third_party/cares/cares/lib/libcares.a"
+			],
+			"targetId" : "c-ares::@ed7038c3f1d563910801",
+			"targetIndex" : 37,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Library",
+			"destination" : "bin",
+			"isOptional" : true,
+			"paths" : 
+			[
+				"D:/hw2/build/third_party/cares/cares/bin/cares.pdb"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/cares/cares/src/lib",
+		"source" : "third_party/cares/cares/src/lib"
+	}
+}

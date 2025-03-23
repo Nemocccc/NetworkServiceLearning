@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_leak_check.a CMakeFiles/leak_check.dir/leak_check.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_leak_check.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_log_flags.a CMakeFiles/log_flags.dir/flags.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_log_flags.a

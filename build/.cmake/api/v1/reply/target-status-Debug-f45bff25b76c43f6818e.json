@@ -1,0 +1,398 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "third_party/abseil-cpp/absl/status/libabsl_status.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"absl_cc_library",
+			"install",
+			"target_link_libraries",
+			"target_compile_options",
+			"add_definitions",
+			"target_include_directories",
+			"target_sources"
+		],
+		"files" : 
+		[
+			"third_party/abseil-cpp/CMake/AbseilHelpers.cmake",
+			"third_party/abseil-cpp/absl/status/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 251,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 334,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 253,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 275,
+				"parent" : 1
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 321,
+				"parent" : 6
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 270,
+				"parent" : 1
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 252,
+				"parent" : 1
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wcast-qual"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wconversion-null"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wformat-security"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-declarations"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Woverlength-strings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wundef"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-local-typedefs"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wunused-result"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wvarargs"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wvla"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-DNOMINMAX"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 7,
+					"define" : "_WIN32_WINNT=0x600"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 8,
+					"path" : "D:/hw2/grpc/third_party/abseil-cpp"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "base::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "log_severity::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "raw_logging_internal::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "strerror::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "malloc_internal::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "spinlock_wait::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "throw_delegate::@d3500256dd0e5dba6128"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "crc_cpu_detect::@530013c76c600ad7235e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "crc_internal::@530013c76c600ad7235e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "crc32c::@530013c76c600ad7235e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "crc_cord_state::@530013c76c600ad7235e"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "debugging_internal::@bef747cff411f4c8de33"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "symbolize::@bef747cff411f4c8de33"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "demangle_internal::@bef747cff411f4c8de33"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "stacktrace::@bef747cff411f4c8de33"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "int128::@06b5455b9184ae5d7da9"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "exponential_biased::@e0994a476cd5089078f6"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cordz_functions::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "strings::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "string_view::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "strings_internal::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "str_format_internal::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cord_internal::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "graphcycles_internal::@25f86192366fc0506d0b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cord::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "synchronization::@25f86192366fc0506d0b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cordz_handle::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "kernel_timeout_internal::@25f86192366fc0506d0b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "cordz_info::@74cae815951fcf9ef175"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "bad_optional_access::@4c98f6d3329f50e5b62d"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "time_zone::@c7f8f80c481f24109e5b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "time::@c7f8f80c481f24109e5b"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "civil_time::@c7f8f80c481f24109e5b"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Abseil"
+	},
+	"id" : "status::@e36cf3e4c700511c9d77",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files (x86)/grpc"
+		}
+	},
+	"name" : "status",
+	"nameOnDisk" : "libabsl_status.a",
+	"paths" : 
+	{
+		"build" : "third_party/abseil-cpp/absl/status",
+		"source" : "third_party/abseil-cpp/absl/status"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				0,
+				3,
+				5
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 9,
+			"path" : "third_party/abseil-cpp/absl/status/internal/status_internal.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/abseil-cpp/absl/status/internal/status_internal.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/abseil-cpp/absl/status/status.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"path" : "third_party/abseil-cpp/absl/status/status_payload_printer.h",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 9,
+			"compileGroupIndex" : 0,
+			"path" : "third_party/abseil-cpp/absl/status/status_payload_printer.cc",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 9,
+			"path" : "third_party/abseil-cpp/absl/status/status.h",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

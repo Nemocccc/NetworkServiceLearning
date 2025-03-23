@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_cordz_info.a CMakeFiles/cordz_info.dir/internal/cordz_info.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_cordz_info.a

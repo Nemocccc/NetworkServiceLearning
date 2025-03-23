@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libupb_base_lib.a CMakeFiles/upb_base_lib.dir/third_party/upb/upb/base/status.c.obj
+D:/mingw64/bin/ranlib.exe libupb_base_lib.a

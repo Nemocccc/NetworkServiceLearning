@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libtesting.a CMakeFiles/testing.dir/re2/testing/backtrack.cc.obj CMakeFiles/testing.dir/re2/testing/dump.cc.obj CMakeFiles/testing.dir/re2/testing/exhaustive_tester.cc.obj CMakeFiles/testing.dir/re2/testing/null_walker.cc.obj CMakeFiles/testing.dir/re2/testing/regexp_generator.cc.obj CMakeFiles/testing.dir/re2/testing/string_generator.cc.obj CMakeFiles/testing.dir/re2/testing/tester.cc.obj CMakeFiles/testing.dir/util/pcre.cc.obj
+D:/mingw64/bin/ranlib.exe libtesting.a

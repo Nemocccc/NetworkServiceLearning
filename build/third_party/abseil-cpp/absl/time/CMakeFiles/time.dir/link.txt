@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_time.a CMakeFiles/time.dir/civil_time.cc.obj CMakeFiles/time.dir/clock.cc.obj CMakeFiles/time.dir/duration.cc.obj CMakeFiles/time.dir/format.cc.obj CMakeFiles/time.dir/time.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_time.a

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_log_internal_conditions.a CMakeFiles/log_internal_conditions.dir/internal/conditions.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_log_internal_conditions.a

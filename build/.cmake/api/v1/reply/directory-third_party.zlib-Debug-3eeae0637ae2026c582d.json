@@ -1,0 +1,119 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/zlib/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 184,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 187,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 190,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files (x86)/grpc/lib",
+			"paths" : 
+			[
+				"third_party/zlib/libzlib.dll.a"
+			],
+			"targetId" : "zlib::@88168bcd04ba00925e4e",
+			"targetIndex" : 189,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files (x86)/grpc/bin",
+			"paths" : 
+			[
+				"third_party/zlib/libzlib.dll"
+			],
+			"targetId" : "zlib::@88168bcd04ba00925e4e",
+			"targetIndex" : 189,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files (x86)/grpc/lib",
+			"paths" : 
+			[
+				"third_party/zlib/libzlibstatic.a"
+			],
+			"targetId" : "zlibstatic::@88168bcd04ba00925e4e",
+			"targetIndex" : 190,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files (x86)/grpc/include",
+			"paths" : 
+			[
+				"D:/hw2/build/third_party/zlib/zconf.h",
+				"third_party/zlib/zlib.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files (x86)/grpc/share/man/man3",
+			"paths" : 
+			[
+				"third_party/zlib/zlib.3"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "C:/Program Files (x86)/grpc/share/pkgconfig",
+			"paths" : 
+			[
+				"D:/hw2/build/third_party/zlib/zlib.pc"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/zlib",
+		"source" : "third_party/zlib"
+	}
+}

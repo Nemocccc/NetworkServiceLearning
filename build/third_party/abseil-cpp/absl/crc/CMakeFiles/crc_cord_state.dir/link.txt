@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_crc_cord_state.a CMakeFiles/crc_cord_state.dir/internal/crc_cord_state.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_crc_cord_state.a

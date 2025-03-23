@@ -16,3 +16,6 @@ python tcp/SnackTcpClient.py
 // 新开终端
 python tcp/SnackUdpClient.py
 ```
+
+##### 1
+##### 2

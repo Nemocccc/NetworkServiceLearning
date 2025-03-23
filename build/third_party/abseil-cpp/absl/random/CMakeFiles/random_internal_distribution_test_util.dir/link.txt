@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_random_internal_distribution_test_util.a CMakeFiles/random_internal_distribution_test_util.dir/internal/chi_square.cc.obj CMakeFiles/random_internal_distribution_test_util.dir/internal/distribution_test_util.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_random_internal_distribution_test_util.a

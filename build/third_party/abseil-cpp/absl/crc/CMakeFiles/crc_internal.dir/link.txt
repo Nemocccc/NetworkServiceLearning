@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_crc_internal.a CMakeFiles/crc_internal.dir/internal/crc.cc.obj CMakeFiles/crc_internal.dir/internal/crc_x86_arm_combined.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_crc_internal.a

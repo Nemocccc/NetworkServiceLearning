@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_flags_internal.a CMakeFiles/flags_internal.dir/internal/flag.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_flags_internal.a

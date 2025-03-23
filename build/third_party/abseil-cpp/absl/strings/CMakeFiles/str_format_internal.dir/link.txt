@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_str_format_internal.a CMakeFiles/str_format_internal.dir/internal/str_format/arg.cc.obj CMakeFiles/str_format_internal.dir/internal/str_format/bind.cc.obj CMakeFiles/str_format_internal.dir/internal/str_format/extension.cc.obj CMakeFiles/str_format_internal.dir/internal/str_format/float_conversion.cc.obj CMakeFiles/str_format_internal.dir/internal/str_format/output.cc.obj CMakeFiles/str_format_internal.dir/internal/str_format/parser.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_str_format_internal.a

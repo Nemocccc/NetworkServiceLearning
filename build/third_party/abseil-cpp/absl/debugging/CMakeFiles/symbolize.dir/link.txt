@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_symbolize.a CMakeFiles/symbolize.dir/symbolize.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_symbolize.a

@@ -1,0 +1,119 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"third_party/cares/cares/docs/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 12,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Devel",
+			"destination" : "share/man/man3",
+			"paths" : 
+			[
+				"third_party/cares/cares/docs/ares_cancel.3",
+				"third_party/cares/cares/docs/ares_create_query.3",
+				"third_party/cares/cares/docs/ares_destroy.3",
+				"third_party/cares/cares/docs/ares_destroy_options.3",
+				"third_party/cares/cares/docs/ares_dup.3",
+				"third_party/cares/cares/docs/ares_expand_name.3",
+				"third_party/cares/cares/docs/ares_expand_string.3",
+				"third_party/cares/cares/docs/ares_fds.3",
+				"third_party/cares/cares/docs/ares_free_data.3",
+				"third_party/cares/cares/docs/ares_free_hostent.3",
+				"third_party/cares/cares/docs/ares_free_string.3",
+				"third_party/cares/cares/docs/ares_freeaddrinfo.3",
+				"third_party/cares/cares/docs/ares_get_servers.3",
+				"third_party/cares/cares/docs/ares_get_servers_ports.3",
+				"third_party/cares/cares/docs/ares_getaddrinfo.3",
+				"third_party/cares/cares/docs/ares_gethostbyaddr.3",
+				"third_party/cares/cares/docs/ares_gethostbyname.3",
+				"third_party/cares/cares/docs/ares_gethostbyname_file.3",
+				"third_party/cares/cares/docs/ares_getnameinfo.3",
+				"third_party/cares/cares/docs/ares_getsock.3",
+				"third_party/cares/cares/docs/ares_inet_ntop.3",
+				"third_party/cares/cares/docs/ares_inet_pton.3",
+				"third_party/cares/cares/docs/ares_init.3",
+				"third_party/cares/cares/docs/ares_init_options.3",
+				"third_party/cares/cares/docs/ares_library_cleanup.3",
+				"third_party/cares/cares/docs/ares_library_init.3",
+				"third_party/cares/cares/docs/ares_library_init_android.3",
+				"third_party/cares/cares/docs/ares_library_initialized.3",
+				"third_party/cares/cares/docs/ares_mkquery.3",
+				"third_party/cares/cares/docs/ares_parse_a_reply.3",
+				"third_party/cares/cares/docs/ares_parse_aaaa_reply.3",
+				"third_party/cares/cares/docs/ares_parse_caa_reply.3",
+				"third_party/cares/cares/docs/ares_parse_mx_reply.3",
+				"third_party/cares/cares/docs/ares_parse_naptr_reply.3",
+				"third_party/cares/cares/docs/ares_parse_ns_reply.3",
+				"third_party/cares/cares/docs/ares_parse_ptr_reply.3",
+				"third_party/cares/cares/docs/ares_parse_soa_reply.3",
+				"third_party/cares/cares/docs/ares_parse_srv_reply.3",
+				"third_party/cares/cares/docs/ares_parse_txt_reply.3",
+				"third_party/cares/cares/docs/ares_parse_uri_reply.3",
+				"third_party/cares/cares/docs/ares_process.3",
+				"third_party/cares/cares/docs/ares_query.3",
+				"third_party/cares/cares/docs/ares_save_options.3",
+				"third_party/cares/cares/docs/ares_search.3",
+				"third_party/cares/cares/docs/ares_send.3",
+				"third_party/cares/cares/docs/ares_set_local_dev.3",
+				"third_party/cares/cares/docs/ares_set_local_ip4.3",
+				"third_party/cares/cares/docs/ares_set_local_ip6.3",
+				"third_party/cares/cares/docs/ares_set_servers.3",
+				"third_party/cares/cares/docs/ares_set_servers_csv.3",
+				"third_party/cares/cares/docs/ares_set_servers_ports.3",
+				"third_party/cares/cares/docs/ares_set_servers_ports_csv.3",
+				"third_party/cares/cares/docs/ares_set_socket_callback.3",
+				"third_party/cares/cares/docs/ares_set_socket_configure_callback.3",
+				"third_party/cares/cares/docs/ares_set_socket_functions.3",
+				"third_party/cares/cares/docs/ares_set_sortlist.3",
+				"third_party/cares/cares/docs/ares_strerror.3",
+				"third_party/cares/cares/docs/ares_timeout.3",
+				"third_party/cares/cares/docs/ares_version.3"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Tools",
+			"destination" : "share/man/man1",
+			"paths" : 
+			[
+				"third_party/cares/cares/docs/acountry.1",
+				"third_party/cares/cares/docs/adig.1",
+				"third_party/cares/cares/docs/ahost.1"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/cares/cares/docs",
+		"source" : "third_party/cares/cares/docs"
+	}
+}

@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libgrpc++_error_details.a CMakeFiles/grpc++_error_details.dir/src/cpp/util/error_details.cc.obj
+D:/mingw64/bin/ranlib.exe libgrpc++_error_details.a

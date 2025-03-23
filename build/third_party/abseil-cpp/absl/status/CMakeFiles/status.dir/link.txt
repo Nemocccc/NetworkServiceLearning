@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_status.a CMakeFiles/status.dir/internal/status_internal.cc.obj CMakeFiles/status.dir/status.cc.obj CMakeFiles/status.dir/status_payload_printer.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_status.a

@@ -1,0 +1,81 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"INSTALL"
+		],
+		"files" : 
+		[
+			"third_party/cares/cares/src/tools/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 19,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 36,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 53,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Tools",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"third_party/cares/cares/bin/ahost.exe"
+			],
+			"targetId" : "ahost::@21b8e59c0c7d05059ed1",
+			"targetIndex" : 31,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Tools",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"third_party/cares/cares/bin/adig.exe"
+			],
+			"targetId" : "adig::@21b8e59c0c7d05059ed1",
+			"targetIndex" : 30,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Tools",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"third_party/cares/cares/bin/acountry.exe"
+			],
+			"targetId" : "acountry::@21b8e59c0c7d05059ed1",
+			"targetIndex" : 28,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "third_party/cares/cares/src/tools",
+		"source" : "third_party/cares/cares/src/tools"
+	}
+}

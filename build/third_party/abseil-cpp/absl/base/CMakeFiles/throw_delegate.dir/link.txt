@@ -1,0 +1,2 @@
+D:/mingw64/bin/ar.exe qc libabsl_throw_delegate.a CMakeFiles/throw_delegate.dir/internal/throw_delegate.cc.obj
+D:/mingw64/bin/ranlib.exe libabsl_throw_delegate.a
