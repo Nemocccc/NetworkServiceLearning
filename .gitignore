@@ -1,2 +1,4 @@
 grpc/
 Snack8Dir.cpp
+build/
+.vscode/

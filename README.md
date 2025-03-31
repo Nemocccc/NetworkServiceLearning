@@ -228,6 +228,15 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
   如果一切顺利，grpc就安装成功了
 
 ##### proto文件的编写是跨语言的，与python同
+  cpp grpc文件生成示例：
+  - windows:
+    grpc_cpp_plugin 一般在你安装的grpc路径下grpc/cmake/build/Release/下
+    ```bash
+    # grpc 文件
+    protoc -I . --grpc_out=./cpp_out --plugin=protoc-gen-grpc={your path to grpc_cpp_plugin} snack.proto
+    # cpp 文件
+    protoc -I . --cpp_out=./cpp_out snack.proto 
+    ```
 
 ##### server端同步接口编写
   ```cpp
