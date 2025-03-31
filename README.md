@@ -53,12 +53,12 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
 
    service ServiceName {
     //method
-    rpc client(client-data-structure) returns (server-data-structure) {}
+    rpc serverFunction(client-data-structure) returns (server-data-structure) {}
    }
 
    message client-data-structure {
     int32 interval = 1;
-    // 这里的1并不是internal的默认指，而是internal在client-data-structure这个message的编号
+    // 这里的1并不是internal的默认值，而是internal在client-data-structure这个message的编号
     bool var1 = 2;
     repeated int32 IntArr = 3; // 用repeated关键字定义数组
     ...
@@ -126,8 +126,8 @@ rpc SayHello(stream HelloRequest) returns (stream HelloResponse);
     import {}_pb2_grpc
     import {}_pb2
     #主要实现run()方法，对服务端定义的接口进行请求。
-    run():
-      channel = grpc.insecure_channel("{}:50051") # 定义通道
+    def run():
+      channel = grpc.insecure_channel("localhost:50051") # 定义通道
       stub = {}_pb2_grpc.{}Stub(channel) # 对于服务中的每个方法，编译器都会使用相同名称向 stub 对象添加一个对应的属性。，见下面
       response = stub.FuncClient({}_pb_2.Client_data_structure({key} = {value}))
       # 利用服务端的FuncClient服务进行请求.将返回的数据保存到response变量中

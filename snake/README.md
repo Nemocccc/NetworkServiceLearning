@@ -10,12 +10,9 @@ g++ -o Snake Snake8Dir.o tcp/SnakeTcp.o udp/SnakeUdp.o -lws2_32
 
 ./Snake.exe tcp
 // 新开终端
-python tcp/SnackTcpClient.py
+python tcp/SnakeTcpClient.py
 
 ./Snake.exe udp
 // 新开终端
-python tcp/SnackUdpClient.py
+python udp/SnakeUdpClient.py
 ```
-
-##### 1
-##### 2
