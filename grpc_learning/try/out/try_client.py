@@ -1,6 +1,7 @@
 import grpc
 import try_pb2_grpc
-import try_pb2
+import try_pb25230q5320w
+
 
 
 def run():

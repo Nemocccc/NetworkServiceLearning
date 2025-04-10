@@ -11,6 +11,7 @@
 #include <mutex>
 #include <thread>
 #include <cstring>
+#include <fstream>
 
 #pragma comment(lib, "ws2_32.lib")  // Link with ws2_32.lib
 

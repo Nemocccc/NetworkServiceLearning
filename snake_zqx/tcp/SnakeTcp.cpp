@@ -42,16 +42,25 @@ bool SnakeTcp::StartServer() {
     return true;
 }
 
+
+void logToFile(const std::string& message) {
+    static std::ofstream logFile("debug.log", std::ios::app); // 打开日志文件，追加模式
+    if (logFile.is_open()) {
+        logFile << message << std::endl;
+    }
+}
+
+
 std::string SnakeTcp::ReceiveData(){
     char buffer[BUFFER_SIZE];
     ZeroMemory (buffer, BUFFER_SIZE);
 
     int BytesReceived = recv(ClientSocket, buffer, BUFFER_SIZE, 0);
     if (BytesReceived > 0) {
-        std::cout << "Received: " << std::string(buffer, 0, BytesReceived) << std::endl;
+        logToFile("Received" + std::string(buffer, 0, BytesReceived));
         return std::string(buffer, 0, BytesReceived);
     } else {
-        std::cerr << "无消息" << std::endl;   // ？
+        logToFile("无消息.");
     }
     return "";
 }
