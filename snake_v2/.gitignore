@@ -1,0 +1,67 @@
+#dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+# testing
+/coverage
+
+/.next/
+/out/
+# production/build
+# misc
+.Ds_Store
+*.pem
+# debug
+npm-debug.1og*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+#env files(can optin for committing if needed)
+.env*
+
+# 编译生成的文件
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.exe
+
+# 编译目录
+build/
+out/
+dist/
+
+# 编辑器和 IDE 生成的文件
+*.swp
+*.swo
+*.swn
+*.swn
+*.bak
+*.tmp
+*.log
+*.class
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite
+*.sqlite3
+*.sublime-project
+*.sublime-workspace
+.vscode/
+.idea/
+.DS_Store
+
+# 日志文件
+*.log
+
+# 配置文件
+config.json
+settings.py
