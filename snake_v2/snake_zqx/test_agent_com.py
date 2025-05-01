@@ -103,7 +103,7 @@ if __name__ == "__main__":
     test_config = {
         "env_id": "Snake-v0",          #环境ID
         "model_path": r"saved_models\Snake-v0__ppo_train_agent_vector__1__1744441810/model_4850.pth",  # 模型路径
-        "test_episodes": 1,          #测试局数
+        "test_episodes": 10,          #测试局数
         "render_delay": 0.08          #渲染延迟
     }
     
