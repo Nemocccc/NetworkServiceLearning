@@ -11,7 +11,7 @@ class TCPClient:
     def __init__(self, host, port):
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.sock.connect((host, port))
-        self.sock.settimeout(5)
+        self.sock.settimeout(10)
         self.buffer = b''
 
     def _receive_json(self):

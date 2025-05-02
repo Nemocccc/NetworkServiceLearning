@@ -108,28 +108,6 @@ public:
     void PrintScore();
     //碰撞检测
     bool Collision(COORD new_head);
-    // 将蛇身坐标写入文件
-    void WriteSnakeBodyToFile()
-    {
-        std::ofstream file("snake_body.txt", std::ios::app); // 以追加模式打开文件
-        if (!file.is_open())
-        {
-            std::cerr << "无法打开文件 snake_body.txt！" << std::endl;
-            return;
-        }
-
-        for (size_t i = 0; i < SnakeBody.size(); ++i)
-        {
-            file << "(" << SnakeBody[i].X << "," << SnakeBody[i].Y << ")";
-            if (i < SnakeBody.size() - 1)
-            {
-                file << ", ";
-            }
-        }
-        file << std::endl; // 换行
-        file.close();
-    }
-
     //设置方向
     void SetDir(Direction new_dir)
     {
@@ -343,7 +321,7 @@ void SnakeGame::InitSnake()
 
     // 显式构造COORD对象并转换类型
     SnakeBody.push_back(COORD{static_cast<SHORT>(headx), startY});
-    WriteSnakeBodyToFile(); // 将蛇身坐标写入文件
+
     //绘制蛇身
     PrintSnake();
     //初始为正常状态
@@ -399,7 +377,6 @@ void SnakeGame::SnakeMove()
     {
         CreateFood();
     }
-    WriteSnakeBodyToFile(); // 将蛇身坐标写入文件
     system("cls");
     PrintSnake();
     PrintScore();
