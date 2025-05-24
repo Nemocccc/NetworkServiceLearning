@@ -57,7 +57,7 @@ std::string SnakeTcp::ReceiveData(){
 
     int BytesReceived = recv(ClientSocket, buffer, BUFFER_SIZE, 0);
     if (BytesReceived > 0) {
-        logToFile("Received" + std::string(buffer, 0, BytesReceived));
+        logToFile("Received: " + std::string(buffer, 0, BytesReceived));
         return std::string(buffer, 0, BytesReceived);
     } else {
         logToFile("无消息.");
