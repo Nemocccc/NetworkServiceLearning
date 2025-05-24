@@ -49,27 +49,27 @@
 },
 {
   "directory": "D:/hw2/build",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_ruby_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_ruby_plugin.dir/src/compiler/ruby_plugin.cc.obj -c D:/hw2/grpc/src/compiler/ruby_plugin.cc",
-  "file": "D:/hw2/grpc/src/compiler/ruby_plugin.cc",
-  "output": "CMakeFiles/grpc_ruby_plugin.dir/src/compiler/ruby_plugin.cc.obj"
-},
-{
-  "directory": "D:/hw2/build",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_php_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_php_plugin.dir/src/compiler/php_plugin.cc.obj -c D:/hw2/grpc/src/compiler/php_plugin.cc",
-  "file": "D:/hw2/grpc/src/compiler/php_plugin.cc",
-  "output": "CMakeFiles/grpc_php_plugin.dir/src/compiler/php_plugin.cc.obj"
-},
-{
-  "directory": "D:/hw2/build",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_python_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_python_plugin.dir/src/compiler/python_plugin.cc.obj -c D:/hw2/grpc/src/compiler/python_plugin.cc",
   "file": "D:/hw2/grpc/src/compiler/python_plugin.cc",
   "output": "CMakeFiles/grpc_python_plugin.dir/src/compiler/python_plugin.cc.obj"
 },
 {
   "directory": "D:/hw2/build",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_objective_c_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_objective_c_plugin.dir/src/compiler/objective_c_plugin.cc.obj -c D:/hw2/grpc/src/compiler/objective_c_plugin.cc",
+  "file": "D:/hw2/grpc/src/compiler/objective_c_plugin.cc",
+  "output": "CMakeFiles/grpc_objective_c_plugin.dir/src/compiler/objective_c_plugin.cc.obj"
+},
+{
+  "directory": "D:/hw2/build",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_cpp_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_cpp_plugin.dir/src/compiler/cpp_plugin.cc.obj -c D:/hw2/grpc/src/compiler/cpp_plugin.cc",
   "file": "D:/hw2/grpc/src/compiler/cpp_plugin.cc",
   "output": "CMakeFiles/grpc_cpp_plugin.dir/src/compiler/cpp_plugin.cc.obj"
+},
+{
+  "directory": "D:/hw2/build",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_ruby_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_ruby_plugin.dir/src/compiler/ruby_plugin.cc.obj -c D:/hw2/grpc/src/compiler/ruby_plugin.cc",
+  "file": "D:/hw2/grpc/src/compiler/ruby_plugin.cc",
+  "output": "CMakeFiles/grpc_ruby_plugin.dir/src/compiler/ruby_plugin.cc.obj"
 },
 {
   "directory": "D:/hw2/build",
@@ -85,9 +85,9 @@
 },
 {
   "directory": "D:/hw2/build",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_objective_c_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_objective_c_plugin.dir/src/compiler/objective_c_plugin.cc.obj -c D:/hw2/grpc/src/compiler/objective_c_plugin.cc",
-  "file": "D:/hw2/grpc/src/compiler/objective_c_plugin.cc",
-  "output": "CMakeFiles/grpc_objective_c_plugin.dir/src/compiler/objective_c_plugin.cc.obj"
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/grpc_php_plugin.dir/includes_CXX.rsp -g -o CMakeFiles/grpc_php_plugin.dir/src/compiler/php_plugin.cc.obj -c D:/hw2/grpc/src/compiler/php_plugin.cc",
+  "file": "D:/hw2/grpc/src/compiler/php_plugin.cc",
+  "output": "CMakeFiles/grpc_php_plugin.dir/src/compiler/php_plugin.cc.obj"
 },
 {
   "directory": "D:/hw2/build",
@@ -379,6 +379,12 @@
 },
 {
   "directory": "D:/hw2/build",
+  "command": "D:/mingw64/bin/gcc.exe -D_WIN32_WINNT=0x600 @CMakeFiles/upb_base_lib.dir/includes_C.rsp -g -o CMakeFiles/upb_base_lib.dir/third_party/upb/upb/base/status.c.obj -c D:/hw2/grpc/third_party/upb/upb/base/status.c",
+  "file": "D:/hw2/grpc/third_party/upb/upb/base/status.c",
+  "output": "CMakeFiles/upb_base_lib.dir/third_party/upb/upb/base/status.c.obj"
+},
+{
+  "directory": "D:/hw2/build",
   "command": "D:/mingw64/bin/gcc.exe -D_WIN32_WINNT=0x600 @CMakeFiles/upb_mem_lib.dir/includes_C.rsp -g -o CMakeFiles/upb_mem_lib.dir/third_party/upb/upb/mem/alloc.c.obj -c D:/hw2/grpc/third_party/upb/upb/mem/alloc.c",
   "file": "D:/hw2/grpc/third_party/upb/upb/mem/alloc.c",
   "output": "CMakeFiles/upb_mem_lib.dir/third_party/upb/upb/mem/alloc.c.obj"
@@ -388,12 +394,6 @@
   "command": "D:/mingw64/bin/gcc.exe -D_WIN32_WINNT=0x600 @CMakeFiles/upb_mem_lib.dir/includes_C.rsp -g -o CMakeFiles/upb_mem_lib.dir/third_party/upb/upb/mem/arena.c.obj -c D:/hw2/grpc/third_party/upb/upb/mem/arena.c",
   "file": "D:/hw2/grpc/third_party/upb/upb/mem/arena.c",
   "output": "CMakeFiles/upb_mem_lib.dir/third_party/upb/upb/mem/arena.c.obj"
-},
-{
-  "directory": "D:/hw2/build",
-  "command": "D:/mingw64/bin/gcc.exe -D_WIN32_WINNT=0x600 @CMakeFiles/upb_base_lib.dir/includes_C.rsp -g -o CMakeFiles/upb_base_lib.dir/third_party/upb/upb/base/status.c.obj -c D:/hw2/grpc/third_party/upb/upb/base/status.c",
-  "file": "D:/hw2/grpc/third_party/upb/upb/base/status.c",
-  "output": "CMakeFiles/upb_base_lib.dir/third_party/upb/upb/base/status.c.obj"
 },
 {
   "directory": "D:/hw2/build",
@@ -10471,12 +10471,6 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/demangle_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/demangle_internal.dir/internal/demangle.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/demangle.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/demangle.cc",
-  "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/demangle_internal.dir/internal/demangle.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/debugging_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/debugging_internal.dir/internal/address_is_readable.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/address_is_readable.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/address_is_readable.cc",
   "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/debugging_internal.dir/internal/address_is_readable.cc.obj"
@@ -10495,21 +10489,21 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/symbolize.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/symbolize.dir/symbolize.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/symbolize.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/symbolize.cc",
-  "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/symbolize.dir/symbolize.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/stacktrace.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/stacktrace.dir/stacktrace.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/stacktrace.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/stacktrace.cc",
   "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/stacktrace.dir/stacktrace.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/examine_stack.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/examine_stack.dir/internal/examine_stack.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/examine_stack.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/examine_stack.cc",
-  "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/examine_stack.dir/internal/examine_stack.cc.obj"
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/demangle_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/demangle_internal.dir/internal/demangle.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/demangle.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/demangle.cc",
+  "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/demangle_internal.dir/internal/demangle.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/symbolize.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/symbolize.dir/symbolize.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/symbolize.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/symbolize.cc",
+  "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/symbolize.dir/symbolize.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
@@ -10519,21 +10513,33 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/examine_stack.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/examine_stack.dir/internal/examine_stack.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/examine_stack.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/internal/examine_stack.cc",
+  "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/examine_stack.dir/internal/examine_stack.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/debugging",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/failure_signal_handler.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/failure_signal_handler.dir/failure_signal_handler.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/failure_signal_handler.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/debugging/failure_signal_handler.cc",
   "output": "third_party/abseil-cpp/absl/debugging/CMakeFiles/failure_signal_handler.dir/failure_signal_handler.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/flags_commandlineflag_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/flags_commandlineflag_internal.dir/internal/commandlineflag.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/flags/internal/commandlineflag.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/flags/internal/commandlineflag.cc",
-  "output": "third_party/abseil-cpp/absl/flags/CMakeFiles/flags_commandlineflag_internal.dir/internal/commandlineflag.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/flags_program_name.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/flags_program_name.dir/internal/program_name.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/flags/internal/program_name.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/flags/internal/program_name.cc",
   "output": "third_party/abseil-cpp/absl/flags/CMakeFiles/flags_program_name.dir/internal/program_name.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/flags_marshalling.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/flags_marshalling.dir/marshalling.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/flags/marshalling.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/flags/marshalling.cc",
+  "output": "third_party/abseil-cpp/absl/flags/CMakeFiles/flags_marshalling.dir/marshalling.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/flags_commandlineflag_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/flags_commandlineflag_internal.dir/internal/commandlineflag.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/flags/internal/commandlineflag.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/flags/internal/commandlineflag.cc",
+  "output": "third_party/abseil-cpp/absl/flags/CMakeFiles/flags_commandlineflag_internal.dir/internal/commandlineflag.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
@@ -10546,12 +10552,6 @@
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/flags_commandlineflag.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/flags_commandlineflag.dir/commandlineflag.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/flags/commandlineflag.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/flags/commandlineflag.cc",
   "output": "third_party/abseil-cpp/absl/flags/CMakeFiles/flags_commandlineflag.dir/commandlineflag.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/flags_marshalling.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/flags_marshalling.dir/marshalling.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/flags/marshalling.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/flags/marshalling.cc",
-  "output": "third_party/abseil-cpp/absl/flags/CMakeFiles/flags_marshalling.dir/marshalling.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/flags",
@@ -10609,21 +10609,15 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_conditions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_conditions.dir/internal/conditions.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/conditions.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/conditions.cc",
-  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_conditions.dir/internal/conditions.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_globals.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_globals.dir/internal/globals.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/globals.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/globals.cc",
   "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_globals.dir/internal/globals.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_format.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_format.dir/internal/log_format.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/log_format.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/log_format.cc",
-  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_format.dir/internal/log_format.cc.obj"
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_entry.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_entry.dir/log_entry.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/log_entry.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/log_entry.cc",
+  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_entry.dir/log_entry.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
@@ -10645,18 +10639,6 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_nullguard.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_nullguard.dir/internal/nullguard.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/nullguard.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/nullguard.cc",
-  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_nullguard.dir/internal/nullguard.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_entry.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_entry.dir/log_entry.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/log_entry.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/log_entry.cc",
-  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_entry.dir/log_entry.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_sink.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_sink.dir/log_sink.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/log_sink.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/log_sink.cc",
   "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_sink.dir/log_sink.cc.obj"
@@ -10675,6 +10657,18 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_format.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_format.dir/internal/log_format.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/log_format.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/log_format.cc",
+  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_format.dir/internal/log_format.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_nullguard.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_nullguard.dir/internal/nullguard.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/nullguard.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/nullguard.cc",
+  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_nullguard.dir/internal/nullguard.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_message.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_message.dir/internal/log_message.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/log_message.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/log_message.cc",
   "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_message.dir/internal/log_message.cc.obj"
@@ -10684,6 +10678,12 @@
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_check_op.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_check_op.dir/internal/check_op.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/check_op.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/check_op.cc",
   "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_check_op.dir/internal/check_op.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/log_internal_conditions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/log_internal_conditions.dir/internal/conditions.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/conditions.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/log/internal/conditions.cc",
+  "output": "third_party/abseil-cpp/absl/log/CMakeFiles/log_internal_conditions.dir/internal/conditions.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/log",
@@ -10723,27 +10723,27 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_internal_seed_material.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_internal_seed_material.dir/internal/seed_material.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/seed_material.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/seed_material.cc",
+  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_internal_seed_material.dir/internal/seed_material.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_seed_gen_exception.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_seed_gen_exception.dir/seed_gen_exception.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/seed_gen_exception.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/seed_gen_exception.cc",
   "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_seed_gen_exception.dir/seed_gen_exception.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_distributions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_distributions.dir/discrete_distribution.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/discrete_distribution.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/discrete_distribution.cc",
-  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_distributions.dir/discrete_distribution.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_distributions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_distributions.dir/gaussian_distribution.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/gaussian_distribution.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/gaussian_distribution.cc",
-  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_distributions.dir/gaussian_distribution.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_internal_platform.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_internal_platform.dir/internal/randen_round_keys.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen_round_keys.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen_round_keys.cc",
   "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_internal_platform.dir/internal/randen_round_keys.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_internal_randen_slow.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_internal_randen_slow.dir/internal/randen_slow.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen_slow.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen_slow.cc",
+  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_internal_randen_slow.dir/internal/randen_slow.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
@@ -10759,21 +10759,9 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_internal_randen_slow.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_internal_randen_slow.dir/internal/randen_slow.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen_slow.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen_slow.cc",
-  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_internal_randen_slow.dir/internal/randen_slow.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_internal_randen.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_internal_randen.dir/internal/randen.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/randen.cc",
   "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_internal_randen.dir/internal/randen.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_internal_seed_material.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_internal_seed_material.dir/internal/seed_material.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/seed_material.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/internal/seed_material.cc",
-  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_internal_seed_material.dir/internal/seed_material.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
@@ -10786,6 +10774,18 @@
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_seed_sequences.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_seed_sequences.dir/seed_sequences.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/seed_sequences.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/seed_sequences.cc",
   "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_seed_sequences.dir/seed_sequences.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_distributions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_distributions.dir/discrete_distribution.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/discrete_distribution.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/discrete_distribution.cc",
+  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_distributions.dir/discrete_distribution.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/random_distributions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/random_distributions.dir/gaussian_distribution.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/random/gaussian_distribution.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/random/gaussian_distribution.cc",
+  "output": "third_party/abseil-cpp/absl/random/CMakeFiles/random_distributions.dir/gaussian_distribution.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/random",
@@ -10825,12 +10825,6 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/string_view.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/string_view.dir/string_view.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/string_view.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/string_view.cc",
-  "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/string_view.dir/string_view.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/strings_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/strings_internal.dir/internal/ostringstream.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/ostringstream.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/ostringstream.cc",
   "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/strings_internal.dir/internal/ostringstream.cc.obj"
@@ -10846,6 +10840,12 @@
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/strings_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/strings_internal.dir/internal/escaping.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/escaping.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/escaping.cc",
   "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/strings_internal.dir/internal/escaping.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/string_view.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/string_view.dir/string_view.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/string_view.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/string_view.cc",
+  "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/string_view.dir/string_view.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
@@ -10975,12 +10975,6 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/cordz_functions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/cordz_functions.dir/internal/cordz_functions.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cordz_functions.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cordz_functions.cc",
-  "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/cordz_functions.dir/internal/cordz_functions.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/cord_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/cord_internal.dir/internal/cord_internal.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cord_internal.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cord_internal.cc",
   "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/cord_internal.dir/internal/cord_internal.cc.obj"
@@ -11017,6 +11011,12 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/cordz_functions.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/cordz_functions.dir/internal/cordz_functions.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cordz_functions.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cordz_functions.cc",
+  "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/cordz_functions.dir/internal/cordz_functions.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/strings",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/cordz_info.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/cordz_info.dir/internal/cordz_info.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cordz_info.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/strings/internal/cordz_info.cc",
   "output": "third_party/abseil-cpp/absl/strings/CMakeFiles/cordz_info.dir/internal/cordz_info.cc.obj"
@@ -11047,15 +11047,15 @@
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/synchronization",
-  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/graphcycles_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc",
-  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc",
-  "output": "third_party/abseil-cpp/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.obj"
-},
-{
-  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/synchronization",
   "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/kernel_timeout_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/kernel_timeout_internal.dir/internal/kernel_timeout.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/synchronization/internal/kernel_timeout.cc",
   "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/synchronization/internal/kernel_timeout.cc",
   "output": "third_party/abseil-cpp/absl/synchronization/CMakeFiles/kernel_timeout_internal.dir/internal/kernel_timeout.cc.obj"
+},
+{
+  "directory": "D:/hw2/build/third_party/abseil-cpp/absl/synchronization",
+  "command": "D:/mingw64/bin/g++.exe -D_WIN32_WINNT=0x600 @CMakeFiles/graphcycles_internal.dir/includes_CXX.rsp -g -Wall -Wextra -Wcast-qual -Wconversion-null -Wformat-security -Wmissing-declarations -Woverlength-strings -Wpointer-arith -Wundef -Wunused-local-typedefs -Wunused-result -Wvarargs -Wvla -Wwrite-strings -DNOMINMAX -o CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.obj -c D:/hw2/grpc/third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc",
+  "file": "D:/hw2/grpc/third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc",
+  "output": "third_party/abseil-cpp/absl/synchronization/CMakeFiles/graphcycles_internal.dir/internal/graphcycles.cc.obj"
 },
 {
   "directory": "D:/hw2/build/third_party/abseil-cpp/absl/synchronization",
